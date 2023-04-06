@@ -1,0 +1,7 @@
+<h4> enter image name to pull below </h4>
+<form method = "POST" action = "/image/pull/">
+    {% csrf_token %}
+    <p>image name :</p>
+    <input type="text" name ="imagename"/>
+    <input type="submit"/>
+</form>

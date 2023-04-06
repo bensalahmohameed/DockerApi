@@ -1,0 +1,91 @@
+<h2>available pages are :</h2>
+<h4>images :</h4>
+<form method="get" action = "/image/show/"">
+    {% csrf_token %}
+
+    <input type="submit" value="showimages"/>
+</form>
+
+<form method='get' action = '/image/pull/'>
+    {% csrf_token %}
+
+    <input type="submit" value="pullimage"/>
+</form>
+<form method='get' action = '/image/build/'>
+    {% csrf_token %}
+
+    <input type="submit" value="buildimage"/>
+</form>
+<form method='get' action = '/image/remove/'>
+    {% csrf_token %}
+
+    <input type="submit" value="removeimage"/>
+</form>
+<h4>containers :</h4>
+<form method='get' action = '/container/run/'>
+    {% csrf_token %}
+
+    <input type="submit" value="containerrun"/>
+</form>
+<form method='get' action = '/container/show/'>
+    {% csrf_token %}
+
+    <input type="submit" value="containershow"/>
+</form>
+<form method='get' action = '/container/rename/'>
+    {% csrf_token %}
+
+    <input type="submit" value="containerrename"/>
+</form>
+<form method='get' action = '/container/kill/'>
+    {% csrf_token %}
+
+    <input type="submit" value="containerkill"/>
+</form>
+<form method='get' action = '/container/logs/'>
+    {% csrf_token %}
+
+    <input type="submit" value="containerlogs"/>
+</form>
+<form method='get' action = '/container/remove/'>
+    {% csrf_token %}
+
+    <input type="submit" value="containerremove"/>
+</form>
+
+<form method='get' action = '/container/start/'>
+    {% csrf_token %}
+
+    <input type="submit" value="containerstart"/>
+</form>
+
+<form method='get' action = '/container/stop/'>
+    {% csrf_token %}
+
+    <input type="submit" value="containerstop"/>
+</form>
+
+
+<h4>network :</h4>
+<form method='get' action = '/network/create/'>
+    {% csrf_token %}
+
+    <input type="submit" value="createnetwork"/>
+</form>
+<form method='get' action = '/network/list/'>
+    {% csrf_token %}
+
+    <input type="submit" value="networklist"/>
+</form>
+<form method='get' action = '/network/remove/'>
+    {% csrf_token %}
+
+    <input type="submit" value="networkremove"/>
+</form>
+
+
+<!form method='get' action = '/network/containers/'>
+    
+
+    <!input type="submit" value="networkcontainers"/>
+<!/form>

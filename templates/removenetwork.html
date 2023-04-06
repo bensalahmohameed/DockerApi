@@ -1,0 +1,7 @@
+<h4> enter network id to remove below </h4>
+<form method = "POST" action = "/network/remove/">
+    {% csrf_token %}
+    <p>network id :</p>
+    <input type="text" name ="networkid"/>
+    <input type="submit"/>
+</form>

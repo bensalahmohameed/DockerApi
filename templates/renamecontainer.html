@@ -1,0 +1,9 @@
+<h4> enter container id to rename below </h4>
+<form method = "POST" action = "/container/rename/">
+    {% csrf_token %}
+    <p>container id :</p>
+    <input type="text" name ="containername"/>
+    <p>container new name :</p>
+    <input type="text" name ="newname"/>
+    <input type="submit"/>
+</form>

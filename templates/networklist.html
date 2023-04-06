@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table,th,td{
+        border:1px solid black;}
+    
+</style>
+<body>
+<table style="width:100%">
+    <tr>
+        <th>network id </th>
+        <th>name</th>
+    </tr>
+    
+{% for u,v in listname %}
+<tr>
+    <td>{{v}}</td>
+    <td>{{u}}</td>
+
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+docker info
+dokcer events
+docker version
+docker push
+docker image history

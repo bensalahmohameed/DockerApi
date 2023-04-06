@@ -1,0 +1,10 @@
+<h4> enter image details  to build below </h4>
+<form method = "POST" action = "/image/build/">
+    {% csrf_token %}
+    <p>image path :</p>
+    <input type="text" name ="imagepath"/>
+    <p>image tag :</p>
+    <input type="text" name ="imagetag"/>
+    
+    <input type="submit"/>
+</form>

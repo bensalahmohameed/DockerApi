@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table,th,td{
+        border:1px solid black;}
+    
+</style>
+<body>
+<table style="width:100%">
+    <tr>
+        <th>container id </th>
+        
+        <th>name</th>
+        <th>status</th>
+    </tr>
+    
+{% for u in containers %}
+<tr>
+    <td>{{u.short_id}}</td>
+    
+    <td>{{u.name}}</td>
+    <td>{{u.status}}</td>
+    
+
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>

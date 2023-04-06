@@ -1,0 +1,7 @@
+<h4> enter container id to stop below </h4>
+<form method = "POST" action = "/container/stop/">
+    {% csrf_token %}
+    <p>container id :</p>
+    <input type="text" name ="containername"/>
+    <input type="submit"/>
+</form>

@@ -1,0 +1,7 @@
+<h4> enter network name to create below </h4>
+<form method = "POST" action = "/network/create/">
+    {% csrf_token %}
+    <p>network name :</p>
+    <input type="text" name ="networkname"/>
+    <input type="submit"/>
+</form>

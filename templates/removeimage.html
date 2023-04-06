@@ -1,0 +1,12 @@
+<h2> enter image id to remove below </h2>
+<h5>this can be done with image_id or image_repository:image_tag</h5>
+<form method = "POST" action = "/image/remove/">
+    {% csrf_token %}
+    <p>image to remove :</p>
+    <input type="text" name ="imageid"/>
+    </br></br>
+    <input type="radio" id="yes" name="radio" value="True"><label for="yes">force</label>
+    <input type="radio" id="no" name="radio" value="False"><label for="no">do not force</label>
+</br></br>
+<input type="submit"/>
+</form>

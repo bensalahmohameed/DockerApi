@@ -1,0 +1,23 @@
+<h4> enter container specs to run below </h4>
+<form method = "POST" action = "/container/run/">
+    {% csrf_token %}
+    <p>image name :</p>
+    <input type="text" name ="imagename"/>
+    <p>port number :</p>
+    <input type="text" name ="hostport"/>
+    <p>container port :</p>
+    <input type="text" name ="containerport"/>
+    </br></br>
+    <input type="radio" id="tcp" name="radio" value="tcp"><label for="tcp">tcp</label>
+    <input type="radio" id="udp" name="radio" value="udp"><label for="udp">udp</label>
+    <input type="radio" id="sctp" name="radio" value="sctp"><label for="sctp">sctp</label>
+</br></br>
+    
+    <p>container network :</p>
+    <input type="text" name ="network"/>
+    <p>container name :</p>
+    <input type="text" name ="name"/>
+</br></br>
+
+    <input type="submit"/>
+</form>

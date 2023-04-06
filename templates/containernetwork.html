@@ -1,0 +1,7 @@
+<h4> enter network id to list containers below </h4>
+<form method = "POST" action = "/network/containers/">
+    {% csrf_token %}
+    <p>network id :</p>
+    <input type="text" name ="networkid"/>
+    <input type="submit"/>
+</form>
